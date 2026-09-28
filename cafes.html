@@ -1,0 +1,520 @@
+<!doctype html>
+<!-- 
+    This is the html doc for the cafe recommendations page of the website.
+ -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jharshini Vejaya Kumar" />
+    <meta name="description" content="Boston café recommendations" />
+    <title>Boston Cafés: Jharshini Vejaya Kumar</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="module" src="js/cafes.js"></script>
+  </head>
+  <body>
+    <header>
+      <!--Navigation bar to for the whole website linking to all pages.-->
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">About Me</a></li>
+          <li><a href="cafes.html" aria-current="page">Boston Cafés</a></li>
+          <li><a href="spots.html">Boston Spots</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-layout cafe-page">
+      <h1>Boston Cafés</h1>
+      <div class="sidebar-layout">
+        <aside class="sidebar">
+          <!--clickable sidebar navigation that links to each coffee shop-->
+          <!--sortable by 3 classes of ratings (menu, atmosphere, work environment)-->
+          <label for="sort-by">Sort By&colon;</label>
+          <select id="sort-by">
+            <option value="menu">Menu</option>
+            <option value="atmosphere">Atmosphere</option>
+            <option value="work">Work Environment</option>
+          </select>
+          <nav aria-label="Cafes">
+            <ul>
+              <li>
+                <a href="#tradesman">Tradesman Coffee Shop &amp; Lounge</a>
+              </li>
+              <li><a href="#sip">Sip Café</a></li>
+              <li><a href="#thinking-cup">Thinking Cup</a></li>
+              <li><a href="#ogawa">Ogawa Coffee</a></li>
+              <li><a href="#farmers-horse">Farmers Horse Coffee</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <div class="page-content cafe-rec">
+          <!--adding data- fields for easier sorting-->
+          <article
+            class="cafe-card"
+            id="tradesman"
+            data-menu="4"
+            data-atmosphere="5"
+            data-work="5"
+          >
+            <h2>Tradesman Coffee Shop &amp; Lounge</h2>
+            <!--photo carousel-->
+            <div class="carousel">
+              <button
+                type="button"
+                class="prev-photo"
+                aria-label="Previous Photo"
+              >
+                &lsaquo;
+              </button>
+              <div class="carousel-photo">
+                <img
+                  src="images/tradesman/storefront.svg"
+                  width="800"
+                  height="600"
+                  alt="Illustrated Tradesman Storefront"
+                />
+                <img
+                  src="images/tradesman/interior.svg"
+                  width="800"
+                  height="600"
+                  alt="Illustrated Tradesman Interior"
+                />
+                <img
+                  src="images/tradesman/latte.svg"
+                  width="800"
+                  height="600"
+                  alt="Illustrated Tradesman coffee cup"
+                />
+              </div>
+              <button type="button" class="next-photo" aria-label="Next Photo">
+                &rsaquo;
+              </button>
+            </div>
+            <dl class="ratings">
+              <dt>Menu&colon;</dt>
+              <dd data-category="menu">
+                <!--ratings displayed visually by star icons-->
+                <!--text description of ratings for screen readers-->
+                <span class="ratings-text">4 out of 5</span>
+              </dd>
+              <dt>Atmosphere&colon;</dt>
+              <dd data-category="atmosphere">
+                <span class="ratings-text">5 out of 5</span>
+              </dd>
+              <dt>Work Environment&colon;</dt>
+              <dd data-category="work">
+                <span class="ratings-text">5 out of 5</span>
+              </dd>
+            </dl>
+            <p class="location">
+              <!--Cafe Location links to google maps; loads in a new tab-->
+              Location&colon;
+              <a
+                href="https://maps.app.goo.gl/EAopeArEYyvm6Kjd6"
+                target="_blank"
+                aria-label="Downtown - Google Maps Link opens in new tab"
+                >Downtown</a
+              >
+            </p>
+            <div class="description-text">
+              <p>
+                This spacious café offers a delicious selection of sandwiches,
+                wraps, pastries, coffee, and tea, along with a variety of
+                refrigerated desserts and snacks. My favorites are the Southwest
+                Egg Wrap and Madagascar Vanilla Latte. I deducted 1 point from
+                the menu rating because the drinks can occasionally be
+                inconsistent in taste.
+              </p>
+              <p>
+                The café also provides comfortable seating, with large tables
+                that are ideal for working or studying. Free Wi-Fi is available.
+                The décor has a charming, historic feel, with antique trinkets
+                scattered throughout the café, adding to its cozy and
+                distinctive atmosphere. The staff are friendly and service is
+                generally fast. The size and layout of the café makes the space
+                feel uncrowded even when it is busy. It is also relatively quiet
+                inside.
+              </p>
+            </div>
+          </article>
+          <article
+            class="cafe-card"
+            id="sip"
+            data-menu="3"
+            data-atmosphere="5"
+            data-work="2"
+          >
+            <h2>Sip Café</h2>
+            <!--photo carousel-->
+            <div class="carousel">
+              <button
+                type="button"
+                class="prev-photo"
+                aria-label="Previous Photo"
+              >
+                &lsaquo;
+              </button>
+              <div class="carousel-photo">
+                <img
+                  src="images/sip-cafe/storefront.svg"
+                  width="800"
+                  height="600"
+                  alt="Illustrated Sip Cafe Storefront"
+                />
+                <img
+                  src="images/sip-cafe/interior.svg"
+                  width="800"
+                  height="600"
+                  alt="Illustrated Sip Cafe Interior"
+                />
+                <img
+                  src="images/sip-cafe/latte.svg"
+                  width="800"
+                  height="600"
+                  alt="Illustrated Sip Cafe coffee cup"
+                />
+              </div>
+              <button type="button" class="next-photo" aria-label="Next Photo">
+                &rsaquo;
+              </button>
+            </div>
+            <dl class="ratings">
+              <dt>Menu&colon;</dt>
+              <dd data-category="menu">
+                <!--ratings displayed visually by star icons-->
+                <!--text description of ratings for screen readers-->
+                <span class="ratings-text">3 out of 5</span>
+              </dd>
+              <dt>Atmosphere&colon;</dt>
+              <dd data-category="atmosphere">
+                <span class="ratings-text">5 out of 5</span>
+              </dd>
+              <dt>Work Environment&colon;</dt>
+              <dd data-category="work">
+                <span class="ratings-text">2 out of 5</span>
+              </dd>
+            </dl>
+            <p class="location">
+              <!--Cafe Location links to google maps; loads in a new tab-->
+              Location&colon;
+              <a
+                href="https://maps.app.goo.gl/GFGw4qPedMyGD2KPA"
+                target="_blank"
+                aria-label="Downtown - Google Maps Link opens in new tab"
+                >Downtown</a
+              >
+            </p>
+            <div class="description-text">
+              <p>
+                This is a cute instagrammable, glasshouse-style café in Post
+                Office Square. Their menu includes sandwiches, salads, coffee,
+                and tea. Their lattes are pretty good. I recommend the Salted
+                Caramel Latte, though you may want to ask them to go easy on the
+                syrup, as it is extremely sweet otherwise. They also make an
+                incredible Pumpkin Latte in the fall. I have not tried their
+                food items, but they seem to attract a steady lunch crowd, which
+                suggests the food is well-liked.
+              </p>
+              <p>
+                The main attraction of this café, however, is its aesthetics. It
+                sits in the middle of a garden decorated with fairy lights and
+                has a view of a beautiful fountain. Their outdoor seating
+                includes couches and is perfect for summer hang-outs, when the
+                weather is warm. Indoor seating is limited, though, and the
+                small, closely packed tables make it less conducive for working
+                and studying. It also gets very loud and crowded inside during
+                lunch and breakfast.
+              </p>
+            </div>
+          </article>
+          <article
+            class="cafe-card"
+            id="thinking-cup"
+            data-menu="5"
+            data-atmosphere="4"
+            data-work="2"
+          >
+            <h2>Thinking Cup</h2>
+            <!--photo carousel-->
+            <div class="carousel">
+              <button
+                type="button"
+                class="prev-photo"
+                aria-label="Previous Photo"
+              >
+                &lsaquo;
+              </button>
+              <div class="carousel-photo">
+                <img
+                  src="images/thinking-cup/storefront.svg"
+                  width="800"
+                  height="600"
+                  alt="Illustrated Thinking Cup Storefront"
+                />
+                <img
+                  src="images/thinking-cup/interior.svg"
+                  width="800"
+                  height="600"
+                  alt="Illustrated Thinking Cup Interior"
+                />
+                <img
+                  src="images/thinking-cup/latte.svg"
+                  width="800"
+                  height="600"
+                  alt="Illustrated Thinking Cup coffee cup"
+                />
+              </div>
+              <button type="button" class="next-photo" aria-label="Next Photo">
+                &rsaquo;
+              </button>
+            </div>
+            <dl class="ratings">
+              <dt>Menu&colon;</dt>
+              <dd data-category="menu">
+                <!--ratings displayed visually by star icons-->
+                <!--text description of ratings for screen readers-->
+                <span class="ratings-text">5 out of 5</span>
+              </dd>
+              <dt>Atmosphere&colon;</dt>
+              <dd data-category="atmosphere">
+                <span class="ratings-text">4 out of 5</span>
+              </dd>
+              <dt>Work Environment&colon;</dt>
+              <dd data-category="work">
+                <span class="ratings-text">2 out of 5</span>
+              </dd>
+            </dl>
+            <p class="location">
+              <!--Cafe Location links to google maps; loads in a new tab-->
+              Location&colon;
+              <a
+                href="https://maps.app.goo.gl/bqJoFhVCJbJnDH1w7"
+                target="_blank"
+                aria-label="Downtown - Google Maps Link opens in new tab"
+                >Downtown</a
+              >,
+              <a
+                href="https://maps.app.goo.gl/Dt7pm83Sm738CJvs5"
+                target="_blank"
+                aria-label="North End - Google Maps Link opens in new tab"
+                >North End</a
+              >,
+              <a
+                href="https://maps.app.goo.gl/19Wx8bdAiLFMr6898"
+                target="_blank"
+                aria-label="Back Bay - Google Maps Link opens in new tab"
+                >Back Bay</a
+              >
+            </p>
+            <div class="description-text">
+              <p>
+                Thinking Cup is a local café with three locations in the city. I
+                frequent the Downtown location as I pass by it during my
+                commute. It is a small, cozy café offering delicious coffee and
+                tea, as well as food items such as pastries and sandwiches.
+                Their coffee is brewed using Stumptown Coffee Roasters beans,
+                and they offer a variety of flavored lattes. The Honey Cinnamon
+                and Pumpkin Spice lattes are my favorites. The flavored lattes
+                are only mildly sweet, which suits my taste.
+              </p>
+              <p>
+                I would not recommend working or studying here, however. The
+                cafe's compact size means that seating is very limited, with
+                small tables positioned close together. The café is also
+                extremely popular and tends to be busy and crowded throughout
+                the day, especially on weekends.
+              </p>
+            </div>
+          </article>
+          <article
+            class="cafe-card"
+            id="ogawa"
+            data-menu="4"
+            data-atmosphere="4"
+            data-work="4"
+          >
+            <h2>Ogawa Coffee</h2>
+            <!--photo carousel-->
+            <div class="carousel">
+              <button
+                type="button"
+                class="prev-photo"
+                aria-label="Previous Photo"
+              >
+                &lsaquo;
+              </button>
+              <div class="carousel-photo">
+                <img
+                  src="images/ogawa/storefront.svg"
+                  width="800"
+                  height="600"
+                  alt="Illustrated Ogawa Coffee Storefront"
+                />
+                <img
+                  src="images/ogawa/interior.svg"
+                  width="800"
+                  height="600"
+                  alt="Illustrated Ogawa Coffee Interior"
+                />
+                <img
+                  src="images/ogawa/latte.svg"
+                  width="800"
+                  height="600"
+                  alt="Illustrated Ogawa Coffee coffee cup"
+                />
+              </div>
+              <button type="button" class="next-photo" aria-label="Next Photo">
+                &rsaquo;
+              </button>
+            </div>
+            <dl class="ratings">
+              <dt>Menu&colon;</dt>
+              <dd data-category="menu">
+                <!--ratings displayed visually by star icons-->
+                <!--text description of ratings for screen readers-->
+                <span class="ratings-text">4 out of 5</span>
+              </dd>
+              <dt>Atmosphere&colon;</dt>
+              <dd data-category="atmosphere">
+                <span class="ratings-text">4 out of 5</span>
+              </dd>
+              <dt>Work Environment&colon;</dt>
+              <dd data-category="work">
+                <span class="ratings-text">4 out of 5</span>
+              </dd>
+            </dl>
+            <p class="location">
+              <!--Cafe Location links to google maps; loads in a new tab-->
+              Location&colon;
+              <a
+                href="https://maps.app.goo.gl/dLBJhQeDmrjvTPZh7"
+                target="_blank"
+                aria-label="Downtown - Google Maps Link opens in new tab"
+                >Downtown</a
+              >
+            </p>
+            <div class="description-text">
+              <p>
+                Ogawa Coffee is the Boston outpost of a Japanese coffee chain
+                and its first location outside of Japan. It is known for its
+                matcha and hojicha lattes, but the café also offers espresso
+                drinks and tea. The matcha and coffee beans are sourced from
+                Japan. The menu also includes desserts and breakfast/lunch fare,
+                such as sandwiches, avocado toast and quiche. However, they
+                charge higher prices than other cafés in the area.
+              </p>
+              <p>
+                The space itself has a clean, urban aesthetic and is great for
+                hanging out, working, or studying when it is quiet. The café has
+                large tables and free Wi-Fi. I would avoid lunch hour and
+                weekends, though. The café is small, seating is limited, and the
+                line of people ordering and waiting fills the room fast. Service
+                is slow, so wait times get long when it's busy.
+              </p>
+            </div>
+          </article>
+          <article
+            class="cafe-card"
+            id="farmers-horse"
+            data-menu="4"
+            data-atmosphere="5"
+            data-work="3"
+          >
+            <h2>Farmers Horse Coffee</h2>
+            <!--photo carousel-->
+            <div class="carousel">
+              <button
+                type="button"
+                class="prev-photo"
+                aria-label="Previous Photo"
+              >
+                &lsaquo;
+              </button>
+              <div class="carousel-photo">
+                <img
+                  src="images/farmers-horse/storefront.svg"
+                  width="800"
+                  height="600"
+                  alt="Illustrated Farmers Horse Storefront"
+                />
+                <img
+                  src="images/farmers-horse/interior.svg"
+                  width="800"
+                  height="600"
+                  alt="Illustrated Farmers Horse Interior"
+                />
+                <img
+                  src="images/farmers-horse/latte.svg"
+                  width="800"
+                  height="600"
+                  alt="Illustrated Farmers Horse coffee cup"
+                />
+              </div>
+              <button type="button" class="next-photo" aria-label="Next Photo">
+                &rsaquo;
+              </button>
+            </div>
+            <dl class="ratings">
+              <dt>Menu&colon;</dt>
+              <dd data-category="menu">
+                <!--ratings displayed visually by star icons-->
+                <!--text description of ratings for screen readers-->
+                <span class="ratings-text">4 out of 5</span>
+              </dd>
+              <dt>Atmosphere&colon;</dt>
+              <dd data-category="atmosphere">
+                <span class="ratings-text">5 out of 5</span>
+              </dd>
+              <dt>Work Environment&colon;</dt>
+              <dd data-category="work">
+                <span class="ratings-text">3 out of 5</span>
+              </dd>
+            </dl>
+            <p class="location">
+              <!--Cafe Location links to google maps; loads in a new tab-->
+              Location&colon;
+              <a
+                href="https://maps.app.goo.gl/DFHEjmYRnF1tdysC7"
+                target="_blank"
+                aria-label="Fenway - Google Maps Link opens in new tab"
+                >Fenway</a
+              >
+            </p>
+            <div class="description-text">
+              <p>
+                This café serves Ethiopian coffee &mdash; the beans are imported
+                directly and roasted in small batches. The banana bread and
+                honey lavender lattes are especially great. They also serve
+                breakfast and lunch food including pastries, bagels, sandwiches,
+                etc.
+              </p>
+              <p>
+                The café is small and warmly decorated, creating a cozy
+                atmosphere. It also has a heated, greenhouse-style outdoor
+                seating area. Board games are provided, making it a great place
+                to hang out with friends. However, the café tends to get crowded
+                due to its limited seating. The size of the tables are also
+                extremely small, which makes it less conducive for working or
+                studying.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        Jharshini Vejaya Kumar &middot; MS in Computer Science &middot;
+        Northeastern University
+      </p>
+      <p>CS 5610: Web Development</p>
+    </footer>
+  </body>
+</html>

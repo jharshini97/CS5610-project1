@@ -1,0 +1,103 @@
+<!doctype html>
+<!-- 
+    This is the html doc for the home page of the website, which is the
+    About Me page. It renders text describing my background and interests
+    and a photo of me
+ -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jharshini Vejaya Kumar" />
+    <meta
+      name="description"
+      content="About Jharshini Vejaya Kumar, her Boston cafe and 
+            local spot recommendations"
+    />
+    <title>About Me: Jharshini Vejaya Kumar</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,
+            wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,
+            100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <!--Navigation bar to for the whole website linking to all pages.-->
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html" aria-current="page">About Me</a></li>
+          <li><a href="cafes.html">Boston Cafés</a></li>
+          <li><a href="spots.html">Boston Spots</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-layout about-page">
+      <!-- Text containing my background and hobbies/interests -->
+      <h1>Jharshini Vejaya Kumar</h1>
+      <h2>About Me</h2>
+      <div class="intro">
+        <div class="intro-text">
+          <section class="about-me">
+            <h3>Background</h3>
+            <p>
+              I was born and raised in Penang, Malaysia, and moved to the US in
+              2016 for my undergraduate studies. I attended the University of
+              California San Diego, where I earned my Bachelor's in
+              International Business. I then spent four years in San Francisco
+              working as a tax consultant. I am now pursuing my Master's in
+              Computer Science at Northeastern University's Boston campus.
+            </p>
+          </section>
+          <section class="about-me">
+            <h3>Hobbies &amp; Interests</h3>
+            <p>
+              Outside of class, you'll find me at pilates, curled up with a good
+              book, or catching up on TV shows. Comedy, fantasy, and historical
+              fiction are my go-to genres, though I like branching out from time
+              to time. Some of my favorites are Friends, The Office, Schitt's
+              Creek, Modern Family, Game of Thrones, House of the Dragon, and
+              The Gilded Age. Currently, I am watching Peaky Blinders.
+            </p>
+          </section>
+          <section class="about-me">
+            <h3>Exploring Boston</h3>
+            <p>
+              While I was in San Francisco, I also enjoyed hiking. I loved
+              discovering new trails around the city and the wider Bay Area.
+              Since moving to Boston, where hiking trails are not quite as close
+              to home, I have traded hiking for city walks &mdash; exploring
+              local cafés, restaurants, and charming spots around town.
+            </p>
+            <p>
+              If you are new to Boston, or are simply visiting the city, check
+              out these
+              <a href="cafes.html">cafés</a> and
+              <a href="spots.html">local spots</a>!
+            </p>
+          </section>
+        </div>
+        <!-- Adding a photo of me to the website -->
+        <img
+          class="profile-pic"
+          width="372"
+          height="364"
+          src="images/profile-pic.png"
+          alt="Jharshini's Profile Picture"
+        />
+      </div>
+    </main>
+    <footer>
+      <p>
+        Jharshini Vejaya Kumar &middot; MS in Computer Science &middot;
+        Northeastern University
+      </p>
+      <p>CS 5610: Web Development</p>
+    </footer>
+  </body>
+</html>
