@@ -238,7 +238,7 @@ main {
   display: inline-block;
   width: 1.25rem;
   height: 1.25rem;
-  background-image: url("./images/teacup-empty.svg");
+  background-image: url("../images/teacup-empty.svg");
   background-repeat: no-repeat; /*keep css from repeating the image*/
   background-position: center;
   background-size: contain;
@@ -247,7 +247,7 @@ main {
 
 /* singular filled teacup icon */
 .teacup-filled {
-  background-image: url("./images/teacup-filled.svg");
+  background-image: url("../images/teacup-filled.svg");
 }
 
 /* ratings layout*/
