@@ -82,11 +82,10 @@ Both the favicon and the teacup icons used in the ratings of the coffee shops we
 
 **Prompt used:**
 
-> [Attached are the html, css, and js files for my personal website. There will be three pages: About Me, Boston Cafes and Boston Spots. The first two pages are already created. Giving you the reigns to create the third page - boston spots. there will only be three spots listed - Little Italy,  Beacon Hill, and the Boston Public Garden. research and add brief descriptions to each & what to do there. filter by neighborhood - no need to add full address, just list the neighborhood. you will add the sticky sidebar like similar to the coffee shop page. sidebar should have clickable link to each spot. use track-active.js attached to track the sidebar, similar to cafe page. no image carousel - just one pic per place. the images are located in the image folder and are called north-end.png for little italy, beacon-hill.png, and public-garden.png. generate the html and js. give me the code that needs to be added to style.css.]
+> Attached are the html, css, and js files for my personal website. There will be three pages: About Me, Boston Cafes and Boston Spots. The first two pages are already created. Giving you the reigns to create the third page - boston spots. there will only be three spots listed - Little Italy,  Beacon Hill, and the Boston Public Garden. research and add brief descriptions to each & what to do there. filter by neighborhood - no need to add full address, just list the neighborhood. you will add the sticky sidebar like similar to the coffee shop page. sidebar should have clickable link to each spot. use track-active.js attached to track the sidebar, similar to cafe page. no image carousel - just one pic per place. the images are located in the image folder and are called north-end.png for little italy, beacon-hill.png, and public-garden.png. generate the html and js. give me the code that needs to be added to style.css.
 
-> [can you generate me three images of tradesman coffee shop & lounge - it doesn't have to be accurate just give me something to use - one with the storefront  with the coffee shop name, one with a cup of latte, and one of the hypothetical indoors] - similar prompts used for all the other coffee shops and the icons
-
-> [can you generate me three images of tradesman coffee shop & lounge - it doesn't have to be accurate just give me something to use - one with the storefront  with the coffee shop name, one with a cup of latte, and one of the hypothetical indoors]
+> can you generate me three images of tradesman coffee shop & lounge - it doesn't have to be accurate just give me something to use - one with the storefront  with the coffee shop name, one with a cup of latte, and one of the hypothetical indoors 
+- similar prompts used for the other images and icons
 
 This README was also drafted with Claude Opus 5.5 and edited by me.
 
