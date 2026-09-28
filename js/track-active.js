@@ -44,7 +44,8 @@ function createCardObserver(cardSelector, visibleCards, topNavHeight) {
 
       // find the first visible card
       const activeCard = [...document.querySelectorAll(cardSelector)].find(
-        (card) => visibleCards.has(card),
+        // Ken Yong code review: Removed trailing comma to satisfy the project's ESLint/Prettier configuration.
+        (card) => visibleCards.has(card)
       );
 
       // highlight the link for the active card
@@ -56,7 +57,8 @@ function createCardObserver(cardSelector, visibleCards, topNavHeight) {
     // top of the content section of the page
     // shrink bottom rootmargin by half so a card does not trigger a highllight
     // until it enters top half of the screen
-    { rootMargin: `-${topNavHeight}px 0px -50% 0px` },
+    // Ken Yong code review: Removed trailing comma to satisfy the project's ESLint/Prettier configuration.
+    { rootMargin: `-${topNavHeight}px 0px -50% 0px` }
   );
 }
 
@@ -64,6 +66,7 @@ function createCardObserver(cardSelector, visibleCards, topNavHeight) {
  * Function to track the cafe card being viewed on the page as user
  * scrolls
  */
+// Ken Yong code review: I like this feature that using IntersectionObserver to tracks the visible cafe card and keeps the relevant sidebar link highlighted while scrolling.
 export function trackActiveCard(cardSelector) {
   const topNavHeight = document.querySelector("header").offsetHeight; // get height of the top nav bar in px
 

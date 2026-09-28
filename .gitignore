@@ -1,0 +1,3 @@
+# Ken Yong code review: Ignore installed dependencies and macOS system files.
+node_modules/
+.DS_Store
