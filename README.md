@@ -93,4 +93,4 @@ All other pages and scripts, including the sorting logic in `coffee.js` and the 
 
 ## License
 
-Code is released under the [MIT License](LICENSE). The profile photo and the written About Me text are not covered by this license. All rights to them are reserved.
+Code is released under the [MIT License](LICENSE.txt). The profile photo and the written About Me text are not covered by this license. All rights to them are reserved.
