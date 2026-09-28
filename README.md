@@ -17,10 +17,11 @@ MS Computer Science, Northeastern University
 
 Build a multi-page personal website with HTML, CSS, and JavaScript (ES6 modules, no libraries) that lets visitors get to know me through my interests. The site has three pages:
 
+<!-- Ken Yong code review: Corrected file names and paths to match the actual project structure. coffee.html -> cafes.html -->
 | Page | What it does |
 | --- | --- |
 | **About Me** (`index.html`) | A short intro, photo, and my hobbies and interests. |
-| **Boston Coffee Shops** (`coffee.html`) | Cafés rated on coffee, atmosphere, and work/study-friendliness. Ratings show as teacup icons, and visitors can sort the list by any of the three ratings. |
+| **Boston Coffee Shops** (`cafes.html`) | Cafés rated on coffee, atmosphere, and work/study-friendliness. Ratings show as teacup icons, and visitors can sort the list by any of the three ratings. |
 | **Boston Spots** (`spots.html`) | Favorite places around the city, each with a photo and suggestions for what to do there. Visitors can filter by neighborhood. |
 
 Both the coffee and spots pages have a sticky sidebar that jumps to each entry and highlights the one currently in view.
@@ -59,14 +60,14 @@ npx eslint .
 ```
 
 ## Project Structure
-
+<!-- Ken Yong code review: Corrected file names and paths to match the actual project structure. coffee.html -> cafes.html; coffee.js -> cafes.js; style.css -> css/style.css -->
 ```
-├── index.html          # About Me
-├── coffee.html         # Boston Coffee Shops
-├── spots.html          # Boston Spots
-├── style.css           # Shared styles
+├── index.html           # About Me
+├── cafes.html           # Boston Coffee Shops
+├── spots.html           # Boston Spots
+├── css/style.css        # Shared styles
 ├── js/
-│   ├── coffee.js        # Sorts cafés by rating
+│   ├── cafes.js         # Sorts cafés by rating
 │   ├── spots.js         # Filters spots by neighborhood
 │   └── track-active.js  # Highlights the sidebar link for the entry in view
 └── images/

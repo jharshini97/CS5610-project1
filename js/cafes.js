@@ -60,6 +60,7 @@ function renderRatings() {
 /**
  * function to sort the cafe cards by rating
  */
+// Ken Yong code review: Very interesting interactive sorting using data attributes that allowed the same function to handle multiple rating categories.
 function sortCards() {
   const select = document.querySelector("#sort-by");
   const container = document.querySelector(".page-content");
@@ -74,12 +75,14 @@ function sortCards() {
       // if reault is +ve b goes before a
       // if result is -ve a goes before b
       // if result is 0 both are tied
-      (a, b) => Number(b.dataset[ratingCat]) - Number(a.dataset[ratingCat]),
+      // Ken Yong code review: Removed trailing comma to satisfy the project's ESLint/Prettier configuration.
+      (a, b) => Number(b.dataset[ratingCat]) - Number(a.dataset[ratingCat])
     );
     container.append(...sorted); // append the careds in the order of the sorting
     // map the cards to the sidebar list link (inclusive of <li>) and reorder them according to the sorted order
     sidebarList.append(
-      ...sorted.map((card) => getSidebarLink(card).parentElement),
+      // Ken Yong code review: Removed trailing comma to satisfy the project's ESLint/Prettier configuration.
+      ...sorted.map((card) => getSidebarLink(card).parentElement)
     );
   }
 
@@ -91,6 +94,8 @@ function sortCards() {
 /**
  * Function to build an image carouse
  */
+// Ken Yong code review: Very thoughful implementation of the image carousel especially the wraparound navigation and handling of cafes with only one image.
+// This is very well done and I learned something new from this function!
 function buildCarousel(carousel) {
   const images = [...carousel.querySelectorAll(".carousel-photo img")];
   const prevButton = carousel.querySelector(".prev-photo");

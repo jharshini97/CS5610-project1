@@ -2,6 +2,8 @@
  * Boston Spots page: neighborhood filter + sticky-sidebar tracking.
  * AI-generated (Claude Opus 5.5) — logged in the README's GenAI section.
  */
+// Ken Yong code review: Good separation of reusable functionality by importing the shared active-section tracking logic from another module.
+// I never thought of this and it makes the code more modular and reusable!
 import { getSidebarLink, trackActiveCard } from "./track-active.js";
 
 const CARD_SELECTOR = ".spot-card";
@@ -33,7 +35,8 @@ function applyFilter(neighborhood) {
   filterButtons.forEach((button) => {
     button.setAttribute(
       "aria-pressed",
-      String(button.dataset.filter === neighborhood),
+      // Ken Yong code review: Removed trailing comma to satisfy the project's ESLint/Prettier configuration.
+      String(button.dataset.filter === neighborhood)
     );
   });
 
